@@ -1,0 +1,23 @@
+H:\CIS 242\Exam1b\242dayrange\242dayrange\obj\Debug\ResolveAssemblyReference.cache
+H:\CIS 242\Exam1b\242dayrange\242dayrange\obj\Debug\_42dayrange.Form1.resources
+H:\CIS 242\Exam1b\242dayrange\242dayrange\obj\Debug\_42dayrange.Properties.Resources.resources
+H:\CIS 242\Exam1b\242dayrange\242dayrange\obj\Debug\242dayrange.csproj.GenerateResource.Cache
+H:\CIS 269\242dayrange\242dayrange\obj\Debug\ResolveAssemblyReference.cache
+H:\CIS 269\242dayrange\242dayrange\obj\Debug\_42dayrange.Form1.resources
+H:\CIS 269\242dayrange\242dayrange\obj\Debug\_42dayrange.Properties.Resources.resources
+H:\CIS 269\242dayrange\242dayrange\obj\Debug\GenerateResource-ResGen.read.1.tlog
+H:\CIS 269\242dayrange\242dayrange\obj\Debug\GenerateResource-ResGen.write.1.tlog
+H:\CIS 269\242dayrange\242dayrange\bin\Debug\242dayrange.exe
+H:\CIS 269\242dayrange\242dayrange\bin\Debug\242dayrange.pdb
+H:\CIS 269\242dayrange\242dayrange\obj\Debug\242dayrange.exe
+H:\CIS 269\242dayrange\242dayrange\obj\Debug\242dayrange.pdb
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.exe
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.pdb
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\bin\Debug\242dayrange.exe
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\bin\Debug\242dayrange.pdb
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\obj\Debug\_42dayrange.Form1.resources
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\obj\Debug\_42dayrange.Properties.Resources.resources
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.csproj.GenerateResource.Cache
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.exe
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.pdb
