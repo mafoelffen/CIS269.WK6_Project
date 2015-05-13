@@ -29,26 +29,26 @@ namespace _42dayrange
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chkSaturday = new System.Windows.Forms.CheckBox();
-            this.chkFriday = new System.Windows.Forms.CheckBox();
-            this.chkThursday = new System.Windows.Forms.CheckBox();
-            this.chkWednesday = new System.Windows.Forms.CheckBox();
-            this.chkTuesday = new System.Windows.Forms.CheckBox();
-            this.chkMonday = new System.Windows.Forms.CheckBox();
-            this.chkSunday = new System.Windows.Forms.CheckBox();
+            this.chkDay6 = new System.Windows.Forms.CheckBox();
+            this.chkDay5 = new System.Windows.Forms.CheckBox();
+            this.chkDay4 = new System.Windows.Forms.CheckBox();
+            this.chkDay3 = new System.Windows.Forms.CheckBox();
+            this.chkDay2 = new System.Windows.Forms.CheckBox();
+            this.chkDay1 = new System.Windows.Forms.CheckBox();
+            this.chkDay0 = new System.Windows.Forms.CheckBox();
             this.txtDays = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.chkSaturday);
-            this.groupBox1.Controls.Add(this.chkFriday);
-            this.groupBox1.Controls.Add(this.chkThursday);
-            this.groupBox1.Controls.Add(this.chkWednesday);
-            this.groupBox1.Controls.Add(this.chkTuesday);
-            this.groupBox1.Controls.Add(this.chkMonday);
-            this.groupBox1.Controls.Add(this.chkSunday);
+            this.groupBox1.Controls.Add(this.chkDay6);
+            this.groupBox1.Controls.Add(this.chkDay5);
+            this.groupBox1.Controls.Add(this.chkDay4);
+            this.groupBox1.Controls.Add(this.chkDay3);
+            this.groupBox1.Controls.Add(this.chkDay2);
+            this.groupBox1.Controls.Add(this.chkDay1);
+            this.groupBox1.Controls.Add(this.chkDay0);
             this.groupBox1.Location = new System.Drawing.Point(15, 15);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
@@ -58,89 +58,89 @@ namespace _42dayrange
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Your Days";
             // 
-            // chkSaturday
+            // chkDay6
             // 
-            this.chkSaturday.AutoSize = true;
-            this.chkSaturday.Location = new System.Drawing.Point(217, 114);
-            this.chkSaturday.Margin = new System.Windows.Forms.Padding(6);
-            this.chkSaturday.Name = "chkSaturday";
-            this.chkSaturday.Size = new System.Drawing.Size(102, 28);
-            this.chkSaturday.TabIndex = 6;
-            this.chkSaturday.Text = "Saturday";
-            this.chkSaturday.UseVisualStyleBackColor = true;
-            this.chkSaturday.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
+            this.chkDay6.AutoSize = true;
+            this.chkDay6.Location = new System.Drawing.Point(217, 114);
+            this.chkDay6.Margin = new System.Windows.Forms.Padding(6);
+            this.chkDay6.Name = "chkDay6";
+            this.chkDay6.Size = new System.Drawing.Size(102, 28);
+            this.chkDay6.TabIndex = 6;
+            this.chkDay6.Text = "Saturday";
+            this.chkDay6.UseVisualStyleBackColor = true;
+            this.chkDay6.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
-            // chkFriday
+            // chkDay5
             // 
-            this.chkFriday.AutoSize = true;
-            this.chkFriday.Location = new System.Drawing.Point(217, 74);
-            this.chkFriday.Margin = new System.Windows.Forms.Padding(6);
-            this.chkFriday.Name = "chkFriday";
-            this.chkFriday.Size = new System.Drawing.Size(81, 28);
-            this.chkFriday.TabIndex = 5;
-            this.chkFriday.Text = "Friday";
-            this.chkFriday.UseVisualStyleBackColor = true;
-            this.chkFriday.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
+            this.chkDay5.AutoSize = true;
+            this.chkDay5.Location = new System.Drawing.Point(217, 74);
+            this.chkDay5.Margin = new System.Windows.Forms.Padding(6);
+            this.chkDay5.Name = "chkDay5";
+            this.chkDay5.Size = new System.Drawing.Size(81, 28);
+            this.chkDay5.TabIndex = 5;
+            this.chkDay5.Text = "Friday";
+            this.chkDay5.UseVisualStyleBackColor = true;
+            this.chkDay5.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
-            // chkThursday
+            // chkDay4
             // 
-            this.chkThursday.AutoSize = true;
-            this.chkThursday.Location = new System.Drawing.Point(217, 34);
-            this.chkThursday.Margin = new System.Windows.Forms.Padding(6);
-            this.chkThursday.Name = "chkThursday";
-            this.chkThursday.Size = new System.Drawing.Size(108, 28);
-            this.chkThursday.TabIndex = 4;
-            this.chkThursday.Text = "Thursday";
-            this.chkThursday.UseVisualStyleBackColor = true;
-            this.chkThursday.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
+            this.chkDay4.AutoSize = true;
+            this.chkDay4.Location = new System.Drawing.Point(217, 34);
+            this.chkDay4.Margin = new System.Windows.Forms.Padding(6);
+            this.chkDay4.Name = "chkDay4";
+            this.chkDay4.Size = new System.Drawing.Size(108, 28);
+            this.chkDay4.TabIndex = 4;
+            this.chkDay4.Text = "Thursday";
+            this.chkDay4.UseVisualStyleBackColor = true;
+            this.chkDay4.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
-            // chkWednesday
+            // chkDay3
             // 
-            this.chkWednesday.AutoSize = true;
-            this.chkWednesday.Location = new System.Drawing.Point(12, 154);
-            this.chkWednesday.Margin = new System.Windows.Forms.Padding(6);
-            this.chkWednesday.Name = "chkWednesday";
-            this.chkWednesday.Size = new System.Drawing.Size(130, 28);
-            this.chkWednesday.TabIndex = 3;
-            this.chkWednesday.Text = "Wednesday";
-            this.chkWednesday.UseVisualStyleBackColor = true;
-            this.chkWednesday.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
+            this.chkDay3.AutoSize = true;
+            this.chkDay3.Location = new System.Drawing.Point(12, 154);
+            this.chkDay3.Margin = new System.Windows.Forms.Padding(6);
+            this.chkDay3.Name = "chkDay3";
+            this.chkDay3.Size = new System.Drawing.Size(130, 28);
+            this.chkDay3.TabIndex = 3;
+            this.chkDay3.Text = "Wednesday";
+            this.chkDay3.UseVisualStyleBackColor = true;
+            this.chkDay3.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
-            // chkTuesday
+            // chkDay2
             // 
-            this.chkTuesday.AutoSize = true;
-            this.chkTuesday.Location = new System.Drawing.Point(12, 114);
-            this.chkTuesday.Margin = new System.Windows.Forms.Padding(6);
-            this.chkTuesday.Name = "chkTuesday";
-            this.chkTuesday.Size = new System.Drawing.Size(102, 28);
-            this.chkTuesday.TabIndex = 2;
-            this.chkTuesday.Text = "Tuesday";
-            this.chkTuesday.UseVisualStyleBackColor = true;
-            this.chkTuesday.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
+            this.chkDay2.AutoSize = true;
+            this.chkDay2.Location = new System.Drawing.Point(12, 114);
+            this.chkDay2.Margin = new System.Windows.Forms.Padding(6);
+            this.chkDay2.Name = "chkDay2";
+            this.chkDay2.Size = new System.Drawing.Size(102, 28);
+            this.chkDay2.TabIndex = 2;
+            this.chkDay2.Text = "Tuesday";
+            this.chkDay2.UseVisualStyleBackColor = true;
+            this.chkDay2.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
-            // chkMonday
+            // chkDay1
             // 
-            this.chkMonday.AutoSize = true;
-            this.chkMonday.Location = new System.Drawing.Point(12, 74);
-            this.chkMonday.Margin = new System.Windows.Forms.Padding(6);
-            this.chkMonday.Name = "chkMonday";
-            this.chkMonday.Size = new System.Drawing.Size(97, 28);
-            this.chkMonday.TabIndex = 1;
-            this.chkMonday.Text = "Monday";
-            this.chkMonday.UseVisualStyleBackColor = true;
-            this.chkMonday.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
+            this.chkDay1.AutoSize = true;
+            this.chkDay1.Location = new System.Drawing.Point(12, 74);
+            this.chkDay1.Margin = new System.Windows.Forms.Padding(6);
+            this.chkDay1.Name = "chkDay1";
+            this.chkDay1.Size = new System.Drawing.Size(97, 28);
+            this.chkDay1.TabIndex = 1;
+            this.chkDay1.Text = "Monday";
+            this.chkDay1.UseVisualStyleBackColor = true;
+            this.chkDay1.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
-            // chkSunday
+            // chkDay0
             // 
-            this.chkSunday.AutoSize = true;
-            this.chkSunday.Location = new System.Drawing.Point(12, 34);
-            this.chkSunday.Margin = new System.Windows.Forms.Padding(6);
-            this.chkSunday.Name = "chkSunday";
-            this.chkSunday.Size = new System.Drawing.Size(93, 28);
-            this.chkSunday.TabIndex = 0;
-            this.chkSunday.Text = "Sunday";
-            this.chkSunday.UseVisualStyleBackColor = true;
-            this.chkSunday.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
+            this.chkDay0.AutoSize = true;
+            this.chkDay0.Location = new System.Drawing.Point(12, 34);
+            this.chkDay0.Margin = new System.Windows.Forms.Padding(6);
+            this.chkDay0.Name = "chkDay0";
+            this.chkDay0.Size = new System.Drawing.Size(93, 28);
+            this.chkDay0.TabIndex = 0;
+            this.chkDay0.Text = "Sunday";
+            this.chkDay0.UseVisualStyleBackColor = true;
+            this.chkDay0.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
             // txtDays
             // 
@@ -161,6 +161,7 @@ namespace _42dayrange
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -171,13 +172,13 @@ namespace _42dayrange
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox chkSaturday;
-        private System.Windows.Forms.CheckBox chkFriday;
-        private System.Windows.Forms.CheckBox chkThursday;
-        private System.Windows.Forms.CheckBox chkWednesday;
-        private System.Windows.Forms.CheckBox chkTuesday;
-        private System.Windows.Forms.CheckBox chkMonday;
-        private System.Windows.Forms.CheckBox chkSunday;
+        private System.Windows.Forms.CheckBox chkDay6;
+        private System.Windows.Forms.CheckBox chkDay5;
+        private System.Windows.Forms.CheckBox chkDay4;
+        private System.Windows.Forms.CheckBox chkDay3;
+        private System.Windows.Forms.CheckBox chkDay2;
+        private System.Windows.Forms.CheckBox chkDay1;
+        private System.Windows.Forms.CheckBox chkDay0;
         private System.Windows.Forms.TextBox txtDays;
     }
 }

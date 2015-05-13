@@ -50,13 +50,30 @@ namespace _42dayrange
 
         public List<Day> weekdayList = new List<Day>(); // doing this here so it has a place in memory accessible and only has to be instantiated once.
 
-        public List<Day> currentWeekFormat = new List<Day>();
+        public static List<Day> currentWeekList = new List<Day>();
+
+        public static List<Day> StaticDayList = new List<Day>() 
+        { // this is the static week used to reset the order of what a week is
+            Day.Sunday, 
+            Day.Monday,
+            Day.Tuesday,
+            Day.Wednesday,
+            Day.Thursday,
+            Day.Friday,
+            Day.Saturday
+        };
+
         private void SetWeekOrder(String startDay)
         {
-            currentWeekFormat.Clear(); // clear the using list
+            currentWeekList.Clear(); // clear the using list
             int counter = 0; // init a counter
             // ToDo
              
+        }
+
+        public void SetupForm(Day startDay)
+        {
+            // take the passed day and set up he controls of the form
         }
 
         private IEnumerable<Day> GetCheckboxDays() 
@@ -68,33 +85,33 @@ namespace _42dayrange
 
             // added maf2015.4.9
             weekdayList.Clear(); // empty all items and parse through the form to set fresh.
-            if ( chkSunday.Checked == true )
+            if ( chkDay0.Checked == true )
             {
-                weekdayList.Add(Day.Sunday);
+                weekdayList.Add(currentWeekList[0]);
             }
-            if ( chkMonday.Checked == true )
+            if ( chkDay1.Checked == true )
             {
-                weekdayList.Add(Day.Monday);
+                weekdayList.Add(currentWeekList[0]);
             }
-            if ( chkTuesday.Checked == true )
+            if ( chkDay2.Checked == true )
             {
-                weekdayList.Add(Day.Tuesday);
+                weekdayList.Add(currentWeekList[0]);
             }
-            if ( chkWednesday.Checked == true )
+            if ( chkDay3.Checked == true )
             {
                 weekdayList.Add(Day.Wednesday);
             }
-            if ( chkThursday.Checked == true )
+            if ( chkDay4.Checked == true )
             {
-                weekdayList.Add(Day.Thursday);
+                weekdayList.Add(currentWeekList[0]);
             }
-            if ( chkFriday.Checked == true )
+            if ( chkDay5.Checked == true )
             {
-                weekdayList.Add(Day.Friday);
+                weekdayList.Add(currentWeekList[0]);
             }
-            if ( chkSaturday.Checked == true )
+            if ( chkDay6.Checked == true )
             {
-                weekdayList.Add(Day.Saturday);
+                weekdayList.Add(currentWeekList[0]);
             }
             return weekdayList;
            
@@ -128,9 +145,6 @@ namespace _42dayrange
 
             // start at the first day
             int pos = 0;
-
-            
-            
 
             // look through all the days
             while (pos < days.Length)
@@ -173,5 +187,29 @@ namespace _42dayrange
         {
             txtDays.Text = ToDayRange(GetCheckboxDays().ToArray());
         }
+
+        public static void InitWeek(int startIndex) 
+        {
+            int current = startIndex;
+            int counter = 0;
+
+            while (counter < 7)
+            {
+                currentWeekList[counter] = StaticDayList[current];
+                counter++;
+                startIndex++;
+                if (startIndex == 6)
+                {
+                    startIndex = 0;
+                }
+            }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            InitWeek(3);
+        }
+
     }
 }
