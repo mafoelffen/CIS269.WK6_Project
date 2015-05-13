@@ -11,6 +11,29 @@ namespace _42dayrange
 {
     public partial class Form1 : Form
     {
+        /* 
+         * Proposed Plan of Attack
+         * 
+         * Create a workingWeekList previous to this function 
+         * Find the  the passed day in workingweekList and return the indexOf
+         * Set loop to a while count is less than 6
+         * Use that index to add that index value to the first in the list
+         * in loop -- after index of 6, set index to 0
+         * 
+         * set the checkBox text for controls populated from a loop throught the currentWeekFormat
+         * 
+         * edit the GetCheckboxDays() to get the checkkbox text from each CheckBox...
+         * 
+         * Why that logic, because the logic of this works from the order of the if's in GetCheckboxDays.
+         * 
+         * This would take another form dialog to set this as an option
+         * In that form is comboxbox that sets the parameter to pass SetWeekOrder()
+         * Button calls SetWeekOrder then closes the dialog.
+         * 
+         * Default would be to set the text in the checkboxs with the desired Day as the first checkbox.
+         * Then add a menu with an item "Options" to start of that dialog form as a popup.
+         */
+
         public Form1()
         {
             InitializeComponent();
@@ -26,6 +49,15 @@ namespace _42dayrange
          */
 
         public List<Day> weekdayList = new List<Day>(); // doing this here so it has a place in memory accessible and only has to be instantiated once.
+
+        public List<Day> currentWeekFormat = new List<Day>();
+        private void SetWeekOrder(String startDay)
+        {
+            currentWeekFormat.Clear(); // clear the using list
+            int counter = 0; // init a counter
+            // ToDo
+             
+        }
 
         private IEnumerable<Day> GetCheckboxDays() 
         {
