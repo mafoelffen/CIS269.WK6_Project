@@ -123,17 +123,18 @@ namespace _42dayrange
 
         public static void InitWeek(int startIndex) 
         {
+            currentWeekList.Clear();
             int current = startIndex;
             int counter = 0;
 
             while (counter < 7)
             {
-                currentWeekList[counter] = StaticDayList[current];
+                currentWeekList.Add(StaticDayList[current]);
                 counter++;
-                startIndex++;
-                if (startIndex == 6)
+                current++;
+                if (current == 6)
                 {
-                    startIndex = 0;
+                    current = 0;
                 }
             }
         }
@@ -159,6 +160,9 @@ namespace _42dayrange
             StaticDayList.Add(Day.Thursday);
             StaticDayList.Add(Day.Friday);
             StaticDayList.Add(Day.Saturday);
+
+            InitWeek(3);
+            SetupForm();
         }
 
     }

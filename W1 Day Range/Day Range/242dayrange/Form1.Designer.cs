@@ -66,7 +66,7 @@ namespace _42dayrange
             this.chkDay6.Name = "chkDay6";
             this.chkDay6.Size = new System.Drawing.Size(102, 28);
             this.chkDay6.TabIndex = 6;
-            this.chkDay6.Text = "Saturday";
+            this.chkDay6.Text = "Tuesday";
             this.chkDay6.UseVisualStyleBackColor = true;
             this.chkDay6.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
@@ -76,9 +76,9 @@ namespace _42dayrange
             this.chkDay5.Location = new System.Drawing.Point(217, 74);
             this.chkDay5.Margin = new System.Windows.Forms.Padding(6);
             this.chkDay5.Name = "chkDay5";
-            this.chkDay5.Size = new System.Drawing.Size(81, 28);
+            this.chkDay5.Size = new System.Drawing.Size(97, 28);
             this.chkDay5.TabIndex = 5;
-            this.chkDay5.Text = "Friday";
+            this.chkDay5.Text = "Monday";
             this.chkDay5.UseVisualStyleBackColor = true;
             this.chkDay5.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
@@ -88,9 +88,9 @@ namespace _42dayrange
             this.chkDay4.Location = new System.Drawing.Point(217, 34);
             this.chkDay4.Margin = new System.Windows.Forms.Padding(6);
             this.chkDay4.Name = "chkDay4";
-            this.chkDay4.Size = new System.Drawing.Size(108, 28);
+            this.chkDay4.Size = new System.Drawing.Size(93, 28);
             this.chkDay4.TabIndex = 4;
-            this.chkDay4.Text = "Thursday";
+            this.chkDay4.Text = "Sunday";
             this.chkDay4.UseVisualStyleBackColor = true;
             this.chkDay4.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
@@ -100,9 +100,9 @@ namespace _42dayrange
             this.chkDay3.Location = new System.Drawing.Point(12, 154);
             this.chkDay3.Margin = new System.Windows.Forms.Padding(6);
             this.chkDay3.Name = "chkDay3";
-            this.chkDay3.Size = new System.Drawing.Size(130, 28);
+            this.chkDay3.Size = new System.Drawing.Size(102, 28);
             this.chkDay3.TabIndex = 3;
-            this.chkDay3.Text = "Wednesday";
+            this.chkDay3.Text = "Saturday";
             this.chkDay3.UseVisualStyleBackColor = true;
             this.chkDay3.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
@@ -112,9 +112,9 @@ namespace _42dayrange
             this.chkDay2.Location = new System.Drawing.Point(12, 114);
             this.chkDay2.Margin = new System.Windows.Forms.Padding(6);
             this.chkDay2.Name = "chkDay2";
-            this.chkDay2.Size = new System.Drawing.Size(102, 28);
+            this.chkDay2.Size = new System.Drawing.Size(81, 28);
             this.chkDay2.TabIndex = 2;
-            this.chkDay2.Text = "Tuesday";
+            this.chkDay2.Text = "Friday";
             this.chkDay2.UseVisualStyleBackColor = true;
             this.chkDay2.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
@@ -124,9 +124,9 @@ namespace _42dayrange
             this.chkDay1.Location = new System.Drawing.Point(12, 74);
             this.chkDay1.Margin = new System.Windows.Forms.Padding(6);
             this.chkDay1.Name = "chkDay1";
-            this.chkDay1.Size = new System.Drawing.Size(97, 28);
+            this.chkDay1.Size = new System.Drawing.Size(108, 28);
             this.chkDay1.TabIndex = 1;
-            this.chkDay1.Text = "Monday";
+            this.chkDay1.Text = "Thursday";
             this.chkDay1.UseVisualStyleBackColor = true;
             this.chkDay1.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
@@ -136,9 +136,9 @@ namespace _42dayrange
             this.chkDay0.Location = new System.Drawing.Point(12, 34);
             this.chkDay0.Margin = new System.Windows.Forms.Padding(6);
             this.chkDay0.Name = "chkDay0";
-            this.chkDay0.Size = new System.Drawing.Size(93, 28);
+            this.chkDay0.Size = new System.Drawing.Size(130, 28);
             this.chkDay0.TabIndex = 0;
-            this.chkDay0.Text = "Sunday";
+            this.chkDay0.Text = "Wednesday";
             this.chkDay0.UseVisualStyleBackColor = true;
             this.chkDay0.CheckedChanged += new System.EventHandler(this.chkDay_CheckedChanged);
             // 
@@ -160,7 +160,7 @@ namespace _42dayrange
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Week 2 Day Range";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
