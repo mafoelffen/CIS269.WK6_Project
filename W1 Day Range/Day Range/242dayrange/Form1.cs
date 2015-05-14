@@ -12,6 +12,8 @@ using System.Linq;
  * 242DayRange Project
  * 
  * Make sure to use Edit > Share in the Main menu to change the week format, to what you want!!!
+ * 
+ * The GitHubRepo for this is at https://github.com/mafoelffen/CIS269.WK6_Project
  */
 
 namespace _42dayrange
