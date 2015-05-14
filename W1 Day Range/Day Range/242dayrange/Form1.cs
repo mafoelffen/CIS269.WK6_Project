@@ -86,27 +86,42 @@ namespace _42dayrange
         {
             string r = ""; // result string
             int pos = 0; // start at the first day
-
+            
             while (pos < days.Length) // look through all the days
-            {
-                // find a sequence!
+            { // 0 < 7
+                // find a sequence, by...
+                // instead of using the Day enum value, read the correspding  
+                // index from the currentWeeList and use thoat as it's value
+                 
                 // offset (next value in sequence)
-                int off = 1;
+                int off = 1; // offset = 1
+
                 // start of sequence is always current day
                 string seq = days[pos].ToString();
 
                 // increase the offset as long as the offset
                 // does not exceed the number of days
                 // and the days are sequential
-                while (pos + off < days.Length && days[pos + off] == days[pos] + off)
-                    off++;
+                while (pos + off < days.Length) // && days[pos + off] == days[pos] + off)
+                {
+                    // currentEnumValue && taht there is a next 
+                    off++; // if there is a next icrement the counter
+                }
+
+                // Heres is where the majic needs to happen now 
                 // if the offset is three or more days
+                if (days[pos] == Day.Monday) 
+                {
+                    off = off + 7;
+                } 
+
+
                 if (off > 2)
                 {
                     // use a dash to separate the first and last
                     seq += "-" + days[pos + off - 1];
                     // skip over the intermediate days
-                    pos+=off; // add instead of just assigning
+                    pos += off; // add instead of just assigning
                 }
                 else pos++; // otherwise move one step
 
@@ -114,6 +129,7 @@ namespace _42dayrange
                 if (r.Length > 0) r += ", ";
                 r += seq;
             }
+        
             return r;
         }
 
