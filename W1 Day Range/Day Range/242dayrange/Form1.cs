@@ -81,6 +81,7 @@ namespace _42dayrange
            
         }
 
+        //private string ToDayRange(Day[] days)
         private string ToDayRange(Day[] days)
         {
             string r = ""; // result string
@@ -105,7 +106,7 @@ namespace _42dayrange
                     // use a dash to separate the first and last
                     seq += "-" + days[pos + off - 1];
                     // skip over the intermediate days
-                    pos+=off; // add instead of just assigning... maf2015.4.9
+                    pos+=off; // add instead of just assigning
                 }
                 else pos++; // otherwise move one step
 
@@ -121,10 +122,9 @@ namespace _42dayrange
             txtDays.Text = ToDayRange(GetCheckboxDays().ToArray());
         }
 
-        public static void InitWeek(int startIndex) 
+        public static void InitWeek(int current) 
         {
             currentWeekList.Clear();
-            int current = startIndex;
             int counter = 0;
 
             while (counter < 7)
@@ -132,7 +132,7 @@ namespace _42dayrange
                 currentWeekList.Add(StaticDayList[current]);
                 counter++;
                 current++;
-                if (current == 6)
+                if (current == 7)
                 {
                     current = 0;
                 }
@@ -163,6 +163,25 @@ namespace _42dayrange
 
             InitWeek(3);
             SetupForm();
+        }
+
+        public static int calledInt = -1;
+
+        private void optionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            calledInt = -1;
+            // Open Options form as a modal dialog
+            Options setOptions = new Options();
+            setOptions.ShowDialog();
+            if (calledInt != -1)
+            {
+                SetupForm();
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }
