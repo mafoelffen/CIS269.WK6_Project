@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+/* 
+ * Mike Ferreira and Max Potter.
+ * 242DayRange Project
+ * 
+ * Make sure to use Edit > Share in the Main menu to change the week format, to what you want!!!
+ */
 namespace _42dayrange
 {
     public partial class Options : Form

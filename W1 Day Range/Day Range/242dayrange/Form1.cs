@@ -7,33 +7,17 @@ using System.Text;
 using System.Windows.Forms;
 using System.Linq;
 
+/* 
+ * Mike Ferreira and Max Potter.
+ * 242DayRange Project
+ * 
+ * Make sure to use Edit > Share in the Main menu to change the week format, to what you want!!!
+ */
+
 namespace _42dayrange
 {
     public partial class Form1 : Form
     {
-        /* 
-         * Proposed Plan of Attack
-         * 
-         * Create a workingWeekList previous to this function 
-         * Find the  the passed day in workingweekList and return the indexOf
-         * Set loop to a while count is less than 6
-         * Use that index to add that index value to the first in the list
-         * in loop -- after index of 6, set index to 0
-         * 
-         * set the checkBox text for controls populated from a loop throught the currentWeekFormat
-         * 
-         * edit the GetCheckboxDays() to get the checkkbox text from each CheckBox...
-         * 
-         * Why that logic, because the logic of this works from the order of the if's in GetCheckboxDays.
-         * 
-         * This would take another form dialog to set this as an option
-         * In that form is comboxbox that sets the parameter to pass SetWeekOrder()
-         * Button calls SetWeekOrder then closes the dialog.
-         * 
-         * Default would be to set the text in the checkboxs with the desired Day as the first checkbox.
-         * Then add a menu with an item "Options" to start of that dialog form as a popup.
-         */
-
         public static List<Day> StaticDayList = new List<Day>(); // this is the static week used to reset the order of what a week is
 
         public Form1()
@@ -81,7 +65,6 @@ namespace _42dayrange
            
         }
 
-        //private string ToDayRange(Day[] days)
         private string ToDayRange(Day[] days)
         {
             string r = ""; // result string
@@ -107,14 +90,6 @@ namespace _42dayrange
                     // currentEnumValue && taht there is a next 
                     off++; // if there is a next icrement the counter
                 }
-
-                // Heres is where the majic needs to happen now 
-                // if the offset is three or more days
-                if (days[pos] == Day.Monday) 
-                {
-                    off = off + 7;
-                } 
-
 
                 if (off > 2)
                 {
@@ -199,6 +174,5 @@ namespace _42dayrange
         {
             this.Close();
         }
-
     }
 }
