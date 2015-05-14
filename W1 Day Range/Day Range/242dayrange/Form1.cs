@@ -34,56 +34,20 @@ namespace _42dayrange
          * Then add a menu with an item "Options" to start of that dialog form as a popup.
          */
 
+        public static List<Day> StaticDayList = new List<Day>(); // this is the static week used to reset the order of what a week is
+
         public Form1()
         {
             InitializeComponent();
         }
       
-
-        /* 1. Create a function which looks at the checkboxes
-         * on the form and returns a sequence (array/list/etc) of the days
-         * selected.  The return must be a sequence of enumeration
-         * values.  The return sequence must be in day-sorted order,
-         * e.g. Sunday, Monday, ..., Friday, Saturday
-         * 
-         */
-
         public List<Day> weekdayList = new List<Day>(); // doing this here so it has a place in memory accessible and only has to be instantiated once.
 
         public static List<Day> currentWeekList = new List<Day>();
 
-        public static List<Day> StaticDayList = new List<Day>() 
-        { // this is the static week used to reset the order of what a week is
-            Day.Sunday, 
-            Day.Monday,
-            Day.Tuesday,
-            Day.Wednesday,
-            Day.Thursday,
-            Day.Friday,
-            Day.Saturday
-        };
-
-        private void SetWeekOrder(String startDay)
-        {
-            currentWeekList.Clear(); // clear the using list
-            int counter = 0; // init a counter
-            // ToDo
-             
-        }
-
-        public void SetupForm(Day startDay)
-        {
-            // take the passed day and set up he controls of the form
-        }
-
         private IEnumerable<Day> GetCheckboxDays() 
         {
-
-            // YOU FILL IN HERE
-            // Create an array/list/etc of enum values
-            // based on the checkboxes on the form.
-
-            // added maf2015.4.9
+            // Create an array/list/etc of enum values, based on the checkboxes on the form.
             weekdayList.Clear(); // empty all items and parse through the form to set fresh.
             if ( chkDay0.Checked == true )
             {
@@ -91,63 +55,38 @@ namespace _42dayrange
             }
             if ( chkDay1.Checked == true )
             {
-                weekdayList.Add(currentWeekList[0]);
+                weekdayList.Add(currentWeekList[1]);
             }
             if ( chkDay2.Checked == true )
             {
-                weekdayList.Add(currentWeekList[0]);
+                weekdayList.Add(currentWeekList[2]);
             }
             if ( chkDay3.Checked == true )
             {
-                weekdayList.Add(Day.Wednesday);
+                weekdayList.Add(currentWeekList[3]);
             }
             if ( chkDay4.Checked == true )
             {
-                weekdayList.Add(currentWeekList[0]);
+                weekdayList.Add(currentWeekList[4]);
             }
             if ( chkDay5.Checked == true )
             {
-                weekdayList.Add(currentWeekList[0]);
+                weekdayList.Add(currentWeekList[5]);
             }
             if ( chkDay6.Checked == true )
             {
-                weekdayList.Add(currentWeekList[0]);
+                weekdayList.Add(currentWeekList[6]);
             }
             return weekdayList;
            
         }
 
-        /* 2. and 3. 
-         * Here is a BROKEN! function which accepts a collection
-         * of enumerated day values and calculates the
-         * date range.  Fix this function!
-         * 
-         * There is ONE bug in this function.
-         * 
-         * You may assume the input will
-         * be in sorted order.   
-         * Reference only the parameter days, not
-         * the checkboxes.
-         * 
-         * The date range is a string which lists the
-         * names of each selected day, separated by
-         * a comma.  If three or more consecutive days
-         * are selected, however, use a dash to specify the range
-         * from the first to the last.
-         * 
-         */
         private string ToDayRange(Day[] days)
         {
-            // YOU FIX STARTING HERE
-            
-            // result string
-            string r = "";
+            string r = ""; // result string
+            int pos = 0; // start at the first day
 
-            // start at the first day
-            int pos = 0;
-
-            // look through all the days
-            while (pos < days.Length)
+            while (pos < days.Length) // look through all the days
             {
                 // find a sequence!
                 // offset (next value in sequence)
@@ -160,7 +99,6 @@ namespace _42dayrange
                 // and the days are sequential
                 while (pos + off < days.Length && days[pos + off] == days[pos] + off)
                     off++;
-
                 // if the offset is three or more days
                 if (off > 2)
                 {
@@ -176,13 +114,8 @@ namespace _42dayrange
                 r += seq;
             }
             return r;
-
-            // END FIXING HERE
-
-            
         }
 
-        // no need to change this.
         private void chkDay_CheckedChanged(object sender, EventArgs e)
         {
             txtDays.Text = ToDayRange(GetCheckboxDays().ToArray());
@@ -203,12 +136,29 @@ namespace _42dayrange
                     startIndex = 0;
                 }
             }
+        }
 
+        public void SetupForm()
+        {
+            // take the current starting day and setup the form
+            chkDay0.Text = currentWeekList[0].ToString();
+            chkDay1.Text = currentWeekList[1].ToString();
+            chkDay2.Text = currentWeekList[2].ToString();
+            chkDay3.Text = currentWeekList[3].ToString();
+            chkDay4.Text = currentWeekList[4].ToString();
+            chkDay5.Text = currentWeekList[5].ToString();
+            chkDay6.Text = currentWeekList[6].ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            InitWeek(3);
+            StaticDayList.Add(Day.Sunday);
+            StaticDayList.Add(Day.Monday);
+            StaticDayList.Add(Day.Tuesday);
+            StaticDayList.Add(Day.Wednesday);
+            StaticDayList.Add(Day.Thursday);
+            StaticDayList.Add(Day.Friday);
+            StaticDayList.Add(Day.Saturday);
         }
 
     }

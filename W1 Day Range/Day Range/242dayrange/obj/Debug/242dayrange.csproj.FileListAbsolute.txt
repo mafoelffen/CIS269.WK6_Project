@@ -21,3 +21,10 @@ C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day R
 C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.csproj.GenerateResource.Cache
 C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.exe
 C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.pdb
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\bin\Debug\242dayrange.exe
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\bin\Debug\242dayrange.pdb
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\_42dayrange.Form1.resources
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\_42dayrange.Options.resources
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\_42dayrange.Properties.Resources.resources
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.csproj.GenerateResource.Cache
