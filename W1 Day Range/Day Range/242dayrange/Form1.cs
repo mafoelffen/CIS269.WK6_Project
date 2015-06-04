@@ -71,41 +71,55 @@ namespace _42dayrange
         {
             string r = ""; // result string
             int pos = 0; // start at the first day
-            
-            while (pos < days.Length) // look through all the days
-            { // 0 < 7
-                // find a sequence, by...
-                // instead of using the Day enum value, read the correspding  
-                // index from the currentWeeList and use thoat as it's value
-                 
-                // offset (next value in sequence)
-                int off = 1; // offset = 1
 
-                // start of sequence is always current day
-                string seq = days[pos].ToString();
-
-                // increase the offset as long as the offset
-                // does not exceed the number of days
-                // and the days are sequential
-                while (pos + off < days.Length) // && days[pos + off] == days[pos] + off)
-                {
-                    // currentEnumValue && taht there is a next 
-                    off++; // if there is a next icrement the counter
-                }
-
-                if (off > 2)
-                {
-                    // use a dash to separate the first and last
-                    seq += "-" + days[pos + off - 1];
-                    // skip over the intermediate days
-                    pos += off; // add instead of just assigning
-                }
-                else pos++; // otherwise move one step
-
-                // add a comma if needed
-                if (r.Length > 0) r += ", ";
-                r += seq;
+            int adj = 0;
+            if (days.Length > 0) // needs not to be empty to use an adjustment
+            {
+                adj = 5 + (int)days[0]; // adjustment for no-standard week layout
             }
+
+            try
+            {
+                while (pos < days.Length) // look through all the days
+                { // 0 < 7
+                    // find a sequence, by...
+                    // instead of using the Day enum value, read the correspding  
+                    // index from the currentWeeList and use that as it's value
+
+                    // offset (next value in sequence)
+                    int off = 1; // offset = 1
+
+                    // start of sequence is always current day
+                    string seq = days[pos].ToString();
+
+                    // increase the offset as long as the offset
+                    // does not exceed the number of days
+                    // and the days are sequential
+                    //========= Adjustment ==========
+
+                    while (pos + off < days.Length && (days[pos + off] == days[pos] + off || days[pos + off] == days[pos] + off - adj))
+                    { // above adds adjustment for non-standard week
+                        // currentEnumValue && that there is a next 
+                        off++; // if there is a next icrement the counter
+                    }
+
+                    if (off > 2)
+                    {
+                        // use a dash to separate the first and last
+                        seq += "-" + days[pos + off - 1];
+                        // skip over the intermediate days
+                        pos += off; // add instead of just assigning
+                    }
+                    else pos++; // otherwise move one step
+
+                    // add a comma if needed
+                    if (r.Length > 0) r += ", ";
+                    r += seq;
+
+                }
+            }
+            catch (Exception ex) { }
+
         
             return r;
         }
