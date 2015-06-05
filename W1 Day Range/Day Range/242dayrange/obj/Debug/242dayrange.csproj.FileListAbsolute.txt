@@ -28,3 +28,4 @@ C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project
 C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\_42dayrange.Options.resources
 C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\_42dayrange.Properties.Resources.resources
 C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\242dayrange.csproj.GenerateResource.Cache
+C:\Users\Michael\Documents\Visual Studio 2013\Projects\CIS269\CIS269.WK6_Project\W1 Day Range\Day Range\242dayrange\obj\Debug\_42dayrange.EasterEggForm.resources

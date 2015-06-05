@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EasterEggForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EasterEggForm.Designer.cs">
+      <DependentUpon>EasterEggForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EasterEggForm.resx">
+      <DependentUpon>EasterEggForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Form1.cs</DependentUpon>
@@ -128,6 +137,33 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Battlefield.wav" />
+    <EmbeddedResource Include="Bomb.wav" />
+    <Content Include="Graphics\ex1.PNG" />
+    <Content Include="Graphics\ex2.PNG" />
+    <Content Include="Graphics\ex3.PNG" />
+    <Content Include="Graphics\ex4.PNG" />
+    <Content Include="Graphics\ex5.PNG" />
+    <Content Include="Graphics\ex6.PNG" />
+    <Content Include="Graphics\ex7.PNG" />
+    <Content Include="Graphics\PacMan.jpg" />
+    <Content Include="Graphics\PurpleMinion.jpg" />
+    <Content Include="Graphics\tumblr_inline_nnetkxFMCU1sudr4i_1280.png" />
+    <Content Include="Graphics\YellowMinion.png" />
+    <Content Include="SoundBites\Bomb_Exploding-Sound_Explorer-68256487.wav" />
+    <Content Include="SoundBites\Modern_Battlefield-Mike_Koenig-1530825219.wav" />
+    <Content Include="SoundBites\pacman_beginning.wav" />
+    <Content Include="SoundBites\pacman_chomp.wav" />
+    <Content Include="SoundBites\pacman_death.wav" />
+    <Content Include="SoundBites\pacman_eatghost.wav" />
+    <Content Include="SoundBites\pacman_intermission.wav" />
+    <EmbeddedResource Include="_beginning.wav" />
+    <EmbeddedResource Include="_chomp.wav" />
+    <EmbeddedResource Include="_death.wav" />
+    <EmbeddedResource Include="_eatghost.wav" />
+    <EmbeddedResource Include="_intermission.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

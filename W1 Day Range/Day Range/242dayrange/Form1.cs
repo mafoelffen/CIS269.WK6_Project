@@ -98,7 +98,7 @@ namespace _42dayrange
                     //========= Adjustment ==========
 
                     while (pos + off < days.Length && (days[pos + off] == days[pos] + off || days[pos + off] == days[pos] + off - adj))
-                    { // above adds adjustment for non-standard week
+                    { // above adds adjustment for a non-standard week
                         // currentEnumValue && that there is a next 
                         off++; // if there is a next icrement the counter
                     }
@@ -156,6 +156,19 @@ namespace _42dayrange
             chkDay4.Text = currentWeekList[4].ToString();
             chkDay5.Text = currentWeekList[5].ToString();
             chkDay6.Text = currentWeekList[6].ToString();
+            ClearForm();
+        }
+
+        private void ClearForm()
+        {
+            chkDay0.Checked = false;
+            chkDay1.Checked = false;
+            chkDay2.Checked = false;
+            chkDay3.Checked = false;
+            chkDay4.Checked = false;
+            chkDay5.Checked = false;
+            chkDay6.Checked = false;
+            chkDay0.Focus();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -188,6 +201,8 @@ namespace _42dayrange
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            EasterEggForm eef = new EasterEggForm();
+            eef.ShowDialog();
             this.Close();
         }
     }
