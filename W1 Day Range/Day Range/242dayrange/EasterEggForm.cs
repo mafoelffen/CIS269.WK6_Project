@@ -12,6 +12,14 @@ using System.IO;
 using System.Resources;
 using System.Diagnostics;
 
+/*
+ * Created by Mike Ferreira and Max Potter
+ * Spring 2015
+ * CIS269
+ * 
+ * The GitHubRepo for this is at https://github.com/mafoelffen/CIS269.WK6_Project
+ */
+
 
 namespace _42dayrange
 {
